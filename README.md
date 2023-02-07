@@ -12,7 +12,7 @@ Include a dependency on this project in your `deps.edn`. You will probably wish 
 :aliases {:test {:extra-paths ["test"]
                  :extra-deps {midje/midje {:mvn/version "1.10.9"}
                               midje-runner/midje-runner {:git/url "git@github.com:wedesoft/midje-runner"
-                                                         :sha "git sha from master"}}
+                                                         :git/sha "git sha from master"}}
                  :main-opts ["-m" "midje-runner.runner"]}}
 ```
 
