@@ -2,4 +2,5 @@
   (:require [midje.repl :as mr]))
 
 (defn -main [& args]
-  (mr/load-facts :all))
+  (mr/load-facts :all)
+  (System/exit 0))
