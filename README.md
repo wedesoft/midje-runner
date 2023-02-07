@@ -10,7 +10,7 @@ Include a dependency on this project in your `deps.edn`. You will probably wish 
 
 ```clojure
 :aliases {:test {:extra-paths ["test"]
-                 :extra-deps {midje-runner {:git/url "git@github.com:miorimmax/midje-runner"
+                 :extra-deps {midje-runner {:git/url "git@github.com:wedesoft/midje-runner"
                                             :sha "git sha from master"}}
                  :main-opts ["-m" "midje-runner.runner"]}}
 ```
@@ -18,7 +18,7 @@ Include a dependency on this project in your `deps.edn`. You will probably wish 
 Then, invoke Clojure via the command line, invoking the `test` alias:
 
 ```bash
-clj -Atest
+clj -Mtest
 ```
 
 This will scan your project's `test` directory for any tests defined
