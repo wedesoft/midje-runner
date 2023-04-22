@@ -16,10 +16,12 @@ Include a dependency on this project in your `deps.edn`. You will probably wish 
                  :main-opts ["-m" "midje-runner.runner"]}}
 ```
 
-Then, invoke Clojure via the command line, invoking the `test` alias:
+Then, invoke Clojure via the command line, invoking the `test` alias with optional arguments:
 
 ```bash
-clj -Mtest
+clj -M:test
+clj -M:test :all
+clj -M:test mymodule.t-mytests
 ```
 
 This will scan your project's `test` directory for any tests defined
