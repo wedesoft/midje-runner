@@ -11,7 +11,7 @@ Include a dependency on this project in your `deps.edn`. You will probably wish 
 ```clojure
 :aliases {:test {:extra-paths ["test"]
                  :extra-deps {midje/midje {:mvn/version "1.10.9"}
-                              midje-runner/midje-runner {:git/url "git@github.com:wedesoft/midje-runner"
+                              midje-runner/midje-runner {:git/url "https://github.com/wedesoft/midje-runner.git"
                                                          :git/sha "e6e5008998576fa06739f0a49ab1d95503a59406"}}
                  :main-opts ["-m" "midje-runner.runner"]}}
 ```
